@@ -8,9 +8,8 @@ Copies all contents of one IMAP account into another IMAP account.
 
 ## Dependencies
 
-[Node.js](https://nodejs.org/en/) (Most modern versions should work)
-
-[Git](https://git-scm.com)
+-   [Node.js](https://nodejs.org/en/) (Most modern versions should work)
+-   [Git](https://git-scm.com)
 
 ## Installation
 
