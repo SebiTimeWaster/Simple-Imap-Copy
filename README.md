@@ -2,9 +2,9 @@
 
 Copies all contents of one IMAP account into another IMAP account.
 
--   It copies all folders and emails with the corresponding flags
+-   It copies all folders (And subscribes to them) and emails (With the corresponding flags)
 -   It does not check if the email is already present on the target server, it will just create a new copy of it
--   It is not meant to backup you emails, just to migrate them to a new account (For backups use something like [OfflineIMAP](http://www.offlineimap.org))
+-   It is not meant to backup you emails, just to migrate to a new account (For backups use something like [OfflineIMAP](http://www.offlineimap.org))
 
 ## Dependencies
 
@@ -25,8 +25,6 @@ In the file `Simple-Imap-Copy.js` you need to configure your IMAP accounts, then
 ```Bash
 node Simple-Imap-Copy.js
 ```
-
-Remember to subscribe to all copied folders on your target IMAP account, otherwise you won't see them in your email program.
 
 ## Problems
 

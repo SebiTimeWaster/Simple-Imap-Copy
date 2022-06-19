@@ -152,9 +152,13 @@ const boxCallback = (box, nextCallback) => () => {
         destServer.addBox(box.dest, (err) => {
             if (err) throwIt(err, 'Destination Server: Create Box');
 
-            success(`Destination server: ${box.dest} was created`);
+            destServer.subscribeBox(box.dest, (err) => {
+                if (err) throwIt(err, 'Destination Server: Subscribe Box');
 
-            openBox(box, nextCallback);
+                success(`Destination server: ${box.dest} was created`);
+
+                openBox(box, nextCallback);
+            });
         });
     } else {
         openBox(box, nextCallback);
