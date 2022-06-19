@@ -1,0 +1,14 @@
+{
+    "name": "simple-imap-copy",
+    "version": "0.1.0",
+    "license": "CC0 1.0 Universal",
+    "homepage": "https://github.com/SebiTimeWaster/Simple-Imap-Copy",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:SebiTimeWaster/Simple-Imap-Copy.git"
+    },
+    "dependencies": {
+        "cli-color": "^2.0.2",
+        "imap": "^0.8.19"
+    }
+}
